@@ -1,7 +1,7 @@
 import React from "react";
 
 const initialGlobalState = {
-  count: 0,
+  todos: [],
 };
 
 // Create a Context for the (global) State
@@ -68,6 +68,8 @@ export default function App() {
   // Note: within the Root function we can return any Component (not just SomeComponent, but also a Router for instance)
   return <Global Root={() => <SomeComponent />} />;
 }
+
+export { Global, useGlobalState, GlobalState };
 
 // Expose the GlobalState object to the window (allowing GlobalState.set({ count: 'new' }) from anywhere in the code (even your console))
 window.GlobalState = GlobalState;
