@@ -23,9 +23,7 @@ const useTodos = () => {
     setIsEditing(id);
     setEditText(text);
   };
-  const handleEditChange = (event) => {
-    setEditText(event.target.value);
-  };
+
   const saveEdit = (id) => {
     const updatedTodos = globalState.todos.map((todo) => {
       if (todo.id === id) {

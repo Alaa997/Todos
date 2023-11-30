@@ -1,20 +1,12 @@
-import React, { useState } from "react";
-import {
-  Drawer,
-  List,
-  ListItem,
-  ListItemText,
-  IconButton,
-  useMediaQuery,
-  useTheme,
-} from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu";
+import React, { useState } from 'react';
+import { Drawer, List, ListItem, ListItemText, IconButton, useMediaQuery, useTheme } from "@mui/material";
+import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
@@ -23,12 +15,7 @@ const Sidebar = () => {
   const drawerContent = (
     <List>
       {["Home", "Todo", "About"].map((text) => (
-        <ListItem
-          button
-          key={text}
-          component={Link}
-          to={text === "Home" ? "/" : `/${text.toLowerCase()}`}
-        >
+        <ListItem button key={text} component={Link} to={text === "Home" ? "/" : `/${text.toLowerCase()}`}>
           <ListItemText primary={text} />
         </ListItem>
       ))}
@@ -55,7 +42,11 @@ const Sidebar = () => {
         sx={{
           width: 240,
           flexShrink: 0,
-          "& .MuiDrawer-paper": { width: 240, boxSizing: "border-box" },
+          "& .MuiDrawer-paper": {
+            width: 240,
+            boxSizing: "border-box",
+            backgroundColor: "darkgray",
+          },
         }}
       >
         {drawerContent}

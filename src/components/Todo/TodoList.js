@@ -1,14 +1,9 @@
 import {
   Button,
-  Checkbox,
   List,
-  ListItem,
-  ListItemText,
   TextField,
 } from "@mui/material";
-import React, { useState } from "react";
-import { useGlobalState, GlobalState } from "../../context/GlobalState";
-import { v4 as uuidv4 } from "uuid";
+import React from "react";
 import useTodos from "./useTodos";
 import TodoItem from "./TodoItem";
 
