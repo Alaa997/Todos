@@ -54,7 +54,7 @@ const AboutPage = () => {
         <Typography variant="h6" gutterBottom>
           Developed by:
         </Typography>
-        <Typography variant="body1">[Your Name or Team Name]</Typography>
+        <Typography variant="body1">Alaa</Typography>
       </Paper>
     </Box>
   );
