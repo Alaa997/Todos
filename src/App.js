@@ -5,7 +5,7 @@ import HomePage from "./components/Pages/HomePage";
 import About from "./components/Pages/About";
 import TodoPage from "./components/Pages/TodoPage";
 import { Box } from "@mui/material";
-import { Global } from "@emotion/react";
+import { Global } from "./context/GlobalState";
 
 function App() {
   return (
