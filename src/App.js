@@ -1,10 +1,11 @@
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import TodoPage from "./components/Pages/HomePage";
+
 import SideBar from "./components/Navigation/SideBar";
 import HomePage from "./components/Pages/HomePage";
 import About from "./components/Pages/About";
+import TodoPage from "./components/Pages/TodoPage";
 
 function App() {
   return (
